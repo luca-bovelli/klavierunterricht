@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Klavierunterricht in Aying · Luca Bovelli</title>
+  <meta name="description" content="Einzelunterricht am Klavier in Aying für Kinder, Jugendliche und Erwachsene. Du suchst dir die Stücke aus, ich passe sie an deinen Stand an. Erste Probestunde kostenlos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====================================================================
+       HERO: Black upper half + Debussy orchid light rising from below
+       ==================================================================== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-art" aria-hidden="true">
+      <picture>
+        <source media="(max-width: 640px)" srcset="assets/hero-P.webp">
+        <img src="assets/hero-D.webp" alt="" width="1440" height="1020" decoding="async" fetchpriority="high">
+      </picture>
+    </div>
+
+    <header class="site-header">
+      <div class="wrap">
+        <nav class="nav-bar" aria-label="Hauptnavigation">
+          <a href="#" class="brand">Luca Bovelli</a>
+          <ul class="nav-links">
+            <li class="nav-hide-mobile"><a href="#musik">Unterricht</a></li>
+            <li class="nav-hide-mobile"><a href="#ueben">Üben</a></li>
+            <li class="nav-hide-mobile"><a href="#ueber-mich">Über mich</a></li>
+            <li><a href="#preise">Preise</a></li>
+            <li><a href="#probestunde" class="nav-cta">Probestunde</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Für Kinder, Jugendliche und Erwachsene</p>
+        <h1 class="h1" id="hero-title">Klavierunterricht in Aying</h1>
+        <p class="lead">
+          Du suchst dir deine Stücke aus, ob Pop, Filmmusik oder Klassik. Ich richte sie für deinen Stand ein, Technik und Theorie lernst du direkt am Stück.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#probestunde" class="btn btn--primary">Kostenlose Probestunde</a>
+          <p class="hero-facts">
+            <span class="hero-facts-main">30 Minuten pro Woche<span class="hero-facts-dot" aria-hidden="true">·</span>80 € im Monat</span><span class="hero-facts-dot hero-facts-dot--break" aria-hidden="true">·</span><span class="hero-facts-places">Noch 5 Plätze frei</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ====================================================================
+         SECTION 2: MUSIC BREADTH & METHOD (Black, 12-col editorial + covers)
+         ==================================================================== -->
+    <section id="musik" class="section-black" aria-labelledby="musik-title">
+      <div class="wrap">
+        <div class="grid-12 grid-12--stretch">
+          <div class="col-left music-copy">
+            <div class="music-head">
+              <p class="eyebrow">Der Unterricht</p>
+              <h2 class="h2" id="musik-title">Deine Musik, dein Stand</h2>
+              <p class="body">
+                Wir fangen mit Musik an, die du wirklich spielen willst. Zur Probestunde bringe ich eine Fassung deines Stücks mit, die du schon in der ersten Stunde spielen kannst. Klassische Stücke sind genauso willkommen wie Filmmusik oder Popsongs.
+              </p>
+            </div>
+            <p class="body body--bright proof-note">
+              Ein Schüler hat mit einem Popsong angefangen. In zwei Monaten kamen daran Rhythmus, linke Hand, Pedal, Dur und Moll und Umkehrungen dazu.
+            </p>
+          </div>
+
+          <div class="col-right covers-wrap">
+            <div class="cover-grid" role="group" aria-label="Beispiele aus dem Repertoire">
+              <button type="button" class="cover-btn" data-piece="Für Elise (Beethoven)" aria-pressed="false" aria-label="Für Elise von Beethoven für die Probestunde vormerken">
+                <img src="assets/cov-elise.png" alt="Für Elise, Beethoven" width="300" height="300" loading="lazy">
+              </button>
+              <button type="button" class="cover-btn" data-piece="Interstellar (Hans Zimmer)" aria-pressed="false" aria-label="Interstellar von Hans Zimmer für die Probestunde vormerken">
+                <img src="assets/cov-interstellar.png" alt="Interstellar, Hans Zimmer" width="300" height="300" loading="lazy">
+              </button>
+              <button type="button" class="cover-btn" data-piece="Clair de lune (Debussy)" aria-pressed="false" aria-label="Clair de lune von Debussy für die Probestunde vormerken">
+                <img src="assets/cov-clair.png" alt="Clair de lune, Debussy" width="300" height="300" loading="lazy">
+              </button>
+              <button type="button" class="cover-btn" data-piece="Viva la Vida (Coldplay)" aria-pressed="false" aria-label="Viva la Vida von Coldplay für die Probestunde vormerken">
+                <img src="assets/cov-viva.png" alt="Viva la Vida, Coldplay" width="300" height="300" loading="lazy">
+              </button>
+              <button type="button" class="cover-btn" data-piece="River Flows in You (Yiruma)" aria-pressed="false" aria-label="River Flows in You von Yiruma für die Probestunde vormerken">
+                <img src="assets/cov-river.png" alt="River Flows in You, Yiruma" width="300" height="300" loading="lazy">
+              </button>
+              <button type="button" class="cover-btn" data-piece="Prélude cis-Moll, op. 3 Nr. 2 (Rachmaninoff)" aria-pressed="false" aria-label="Prélude cis-Moll von Rachmaninoff für die Probestunde vormerken">
+                <img src="assets/cov-rach.png" alt="Prélude cis-Moll, Rachmaninoff" width="300" height="300" loading="lazy">
+              </button>
+            </div>
+
+            <div class="cover-status">
+              <p class="cover-status-text" id="cover-status" aria-live="polite">
+                Wähl ein Stück aus oder nenn unten dein eigenes.
+              </p>
+              <a href="#probestunde" class="cover-jump" id="cover-jump">Zur Probestunde</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 3: PRACTICE AT HOME (Flooded Lagoon + Chopin Op. 10 No. 1)
+         Text sits strictly over the deep-blue field; notes rise clear of text.
+         ==================================================================== -->
+    <section id="ueben" class="section-flooded" aria-labelledby="ueben-title">
+      <div class="wrap flooded-inner">
+        <div class="grid-12">
+          <div class="flooded-copy">
+            <p class="eyebrow">Üben zu Hause</p>
+            <h2 class="h2" id="ueben-title">30 Minuten am Klavier. Sechs Tage mit Plan.</h2>
+            <p class="body">
+              Einmal pro Woche arbeiten wir gemeinsam am Instrument. Für die Tage dazwischen bekommst du deine Stücke in Fallboard, der Übe-App, die ich selbst geschrieben habe.
+            </p>
+            <p class="body">
+              So musst du zu Hause nicht raten, wie eine Stelle klingen soll. Du übst genau die Takte weiter, die wir zusammen begonnen haben.
+            </p>
+
+            <ul class="practice-list">
+              <li>
+                <span class="practice-label">Tempo anpassen</span>
+                <span class="practice-desc">Schwierige Takte langsam durchspielen und schrittweise steigern.</span>
+              </li>
+              <li>
+                <span class="practice-label">Hände getrennt</span>
+                <span class="practice-desc">Rechte und linke Hand einzeln hören, sehen und üben.</span>
+              </li>
+              <li>
+                <span class="practice-label">Ohne Zusatzkosten</span>
+                <span class="practice-desc">Läuft auf Tablet, Handy und Computer, auch ohne Internet.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flooded-art" aria-hidden="true">
+        <picture>
+          <source media="(max-width: 980px)" srcset="assets/practice-P.webp">
+          <img src="assets/practice-D.webp" alt="" width="1440" height="820" loading="lazy" decoding="async">
+        </picture>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 4: ABOUT LUCA & PRICING / TERMS (Black, unified 12-col grid)
+         ==================================================================== -->
+    <section class="section-black" aria-label="Über den Lehrer und Preise">
+      <div class="wrap">
+
+        <!-- 4A: About Luca -->
+        <div id="ueber-mich" class="grid-12">
+          <div class="col-left about-head">
+            <p class="eyebrow">Wer dich unterrichtet</p>
+            <h2 class="h2">Luca Bovelli</h2>
+            <p class="meta">17 · Einzelunterricht in Aying</p>
+          </div>
+
+          <div class="col-right about-body">
+            <p class="lead">
+              Ich spiele Klavier, seit ich fünf bin, klassisch bis zu den Préludes von Rachmaninoff.
+            </p>
+            <p class="body">
+              Spielen nach Gehör, Harmonielehre, Arrangieren und Improvisieren habe ich mir selbst beigebracht. Im Unterricht verbinde ich beides: sichere Technik am Instrument und das Verständnis dafür, wie Musik aufgebaut ist.
+            </p>
+
+            <dl class="fact-grid">
+              <div class="fact-item">
+                <dt>Klassik und Pop</dt>
+                <dd>Von Rachmaninoff und Debussy bis Filmmusik und aktuellen Songs.</dd>
+              </div>
+              <div class="fact-item">
+                <dt>Gehör und Harmonielehre</dt>
+                <dd>Akkorde, Umkehrungen und Begleitmuster direkt am Stück verstehen.</dd>
+              </div>
+              <div class="fact-item">
+                <dt>Fassungen nach Maß</dt>
+                <dd>Jedes Wunschstück richte ich passend für deine Hände ein.</dd>
+              </div>
+              <div class="fact-item">
+                <dt>Eigene Übe-App</dt>
+                <dd>Deine Stücke bekommst du zum Üben zwischen den Stunden in Fallboard.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <hr class="band-divider">
+
+        <!-- 4B: Pricing & Terms -->
+        <div id="preise" class="grid-12">
+          <div class="col-left pricing-intro">
+            <p class="eyebrow">Preise und Bedingungen</p>
+            <h2 class="h2">Übersichtlich und ohne Bindung</h2>
+            <p class="body">
+              Die erste Probestunde ist kostenlos. Danach entscheidest du in Ruhe, ob wir weitermachen.
+            </p>
+          </div>
+
+          <div class="col-right">
+            <ul class="price-list">
+              <li class="price-row">
+                <span class="price-title">Probestunde</span>
+                <span class="price-note">30 Minuten zum Kennenlernen, mit erster Fassung deines Stücks</span>
+                <span class="price-val">
+                  <span class="price-amount">kostenlos</span>
+                </span>
+              </li>
+              <li class="price-row">
+                <span class="price-title">30 Minuten pro Woche</span>
+                <span class="price-note">Fester wöchentlicher Termin, ideal für Kinder und den Einstieg</span>
+                <span class="price-val">
+                  <span class="price-amount">80 €</span>
+                  <span class="price-unit">im Monat</span>
+                </span>
+              </li>
+              <li class="price-row">
+                <span class="price-title">45 Minuten pro Woche</span>
+                <span class="price-note">Mehr Zeit für längere Stücke, Technik und Fortgeschrittene</span>
+                <span class="price-val">
+                  <span class="price-amount">120 €</span>
+                  <span class="price-unit">im Monat</span>
+                </span>
+              </li>
+            </ul>
+
+            <dl class="terms-grid">
+              <div class="term-item">
+                <dt>Ort</dt>
+                <dd>Bei mir in Aying</dd>
+              </div>
+              <div class="term-item">
+                <dt>Kündigung</dt>
+                <dd>Monatlich kündbar</dd>
+              </div>
+              <div class="term-item">
+                <dt>Ferien</dt>
+                <dd>Schulferien frei</dd>
+              </div>
+              <div class="term-item">
+                <dt>Verfügbarkeit</dt>
+                <dd>Noch 5 Plätze frei</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 5: BOOKING + CLOSE LIGHT (Orchid Debussy rising below form)
+         ==================================================================== -->
+    <section id="probestunde" class="section-close" aria-labelledby="probestunde-title">
+      <div class="close-art" aria-hidden="true">
+        <img src="assets/close-D.webp" alt="" width="1440" height="680" loading="lazy" decoding="async">
+      </div>
+
+      <div class="wrap close-content">
+        <div class="grid-12">
+          <div class="col-left booking-intro">
+            <p class="eyebrow">Kontakt</p>
+            <h2 class="h2" id="probestunde-title">Kostenlose Probestunde</h2>
+            <p class="body">
+              Schreib mir kurz, für wen der Unterricht gedacht ist und welche Musik euch gefällt. Ich melde mich mit zwei Terminvorschlägen.
+            </p>
+            <p class="meta">
+              Vorkenntnisse sind nicht nötig. Für die Probestunde musst du nichts mitbringen.
+            </p>
+          </div>
+
+          <div class="col-right">
+            <form class="booking-form" id="booking-form" novalidate>
+              <div class="field-row">
+                <div class="field">
+                  <label for="name">Dein Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" placeholder="Vor- und Nachname" required>
+                </div>
+                <div class="field">
+                  <label for="contact">Telefon oder E-Mail</label>
+                  <input id="contact" name="contact" type="text" autocomplete="email" placeholder="Für Terminvorschläge" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="piece">Wunschstück oder Richtung <span>(optional)</span></label>
+                <input id="piece" name="piece" type="text" placeholder="z. B. Für Elise, Interstellar oder offen">
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn--primary">Kostenlose Probestunde</button>
+                <a id="whatsapp-link" class="btn btn--secondary" href="https://wa.me/?text=Hallo%20Luca%2C%20ich%20h%C3%A4tte%20Interesse%20an%20einer%20kostenlosen%20Probestunde%20f%C3%BCr%20Klavierunterricht%20in%20Aying." target="_blank" rel="noopener">Per WhatsApp schreiben</a>
+              </div>
+
+              <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>Luca Bovelli · Klavierunterricht in Aying</span>
+      <div class="footer-links">
+        <a href="#probestunde">Kontakt</a>
+        <a href="#preise">Preise</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      var coverButtons = Array.prototype.slice.call(document.querySelectorAll('.cover-btn'));
+      var statusEl = document.getElementById('cover-status');
+      var jumpEl = document.getElementById('cover-jump');
+      var pieceInput = document.getElementById('piece');
+      var whatsappLink = document.getElementById('whatsapp-link');
+      var form = document.getElementById('booking-form');
+      var nameInput = document.getElementById('name');
+      var contactInput = document.getElementById('contact');
+      var feedbackEl = document.getElementById('form-feedback');
+
+      function updateWhatsApp(piece) {
+        var base = 'Hallo Luca, ich hätte Interesse an einer kostenlosen Probestunde für Klavierunterricht in Aying.';
+        var msg = piece ? base + ' Wunschstück: ' + piece : base;
+        whatsappLink.href = 'https://wa.me/?text=' + encodeURIComponent(msg);
+      }
+
+      coverButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var already = btn.getAttribute('aria-pressed') === 'true';
+          coverButtons.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+
+          if (already) {
+            statusEl.textContent = 'Wähl ein Stück aus oder nenn unten dein eigenes.';
+            jumpEl.classList.remove('is-visible');
+            if (pieceInput.value === btn.dataset.piece) {
+              pieceInput.value = '';
+              updateWhatsApp('');
+            }
+            return;
+          }
+
+          var piece = btn.dataset.piece;
+          btn.setAttribute('aria-pressed', 'true');
+          statusEl.innerHTML = 'Vorgemerkt für die Probestunde: <strong>' + piece.replace(/</g, '&lt;') + '</strong>';
+          jumpEl.classList.add('is-visible');
+          pieceInput.value = piece;
+          updateWhatsApp(piece);
+        });
+      });
+
+      pieceInput.addEventListener('input', function () {
+        updateWhatsApp(pieceInput.value.trim());
+      });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = nameInput.value.trim();
+        var contact = contactInput.value.trim();
+        var piece = pieceInput.value.trim();
+
+        if (!name || !contact) {
+          feedbackEl.classList.remove('is-ready');
+          feedbackEl.textContent = 'Bitte trag deinen Namen und eine Telefonnummer oder E-Mail ein.';
+          if (!name) nameInput.focus();
+          else contactInput.focus();
+          return;
+        }
+
+        var subject = 'Anfrage kostenlose Probestunde · ' + name;
+        var lines = [
+          'Hallo Luca,',
+          '',
+          'ich möchte gerne eine kostenlose Probestunde für Klavierunterricht in Aying ausmachen.',
+          '',
+          'Name: ' + name,
+          'Kontakt: ' + contact
+        ];
+        if (piece) lines.push('Wunschstück: ' + piece);
+
+        var mailto = 'mailto:?subject=' +
+          encodeURIComponent(subject) +
+          '&body=' + encodeURIComponent(lines.join('\n'));
+
+        feedbackEl.classList.add('is-ready');
+        feedbackEl.textContent = 'Anfrage vorbereitet. Dein E-Mail-Programm öffnet sich, oder schreib direkt per WhatsApp.';
+        window.location.href = mailto;
+      });
+    })();
+  </script>
+</body>
+</html>

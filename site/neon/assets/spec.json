@@ -25,18 +25,18 @@
     "practice-D": {
       "kind": "light",
       "w": 1440,
-      "h": 760,
+      "h": 820,
       "palette": "lagoon",
       "music": { "file": "library/scores/chopin/op-10/1.mxl", "from": 0, "dur": 7 },
-      "span": [-22, 48],
+      "span": [-42, 44],
       "scale": 0.62
     },
     "practice-P": {
       "kind": "light",
       "w": 420,
-      "h": 540,
+      "h": 1080,
       "palette": "lagoon",
-      "music": { "file": "library/scores/chopin/op-10/1.mxl", "from": 0, "dur": 7 },
+      "music": { "file": "library/scores/chopin/op-10/1.mxl", "from": 0, "dur": 12, "until": 4.2 },
       "span": [8, 46],
       "scale": 0.55
     },
@@ -63,7 +63,7 @@
     "cov-viva": {
       "kind": "cover",
       "size": 300,
-      "own": { "title": "Viva la Vida", "composer": "Coldplay", "seed": "viva-3" }
+      "own": { "title": "Viva la Vida", "composer": "Coldplay", "seed": "viva-6" }
     },
     "cov-clair": {
       "kind": "cover",
@@ -73,7 +73,7 @@
     "cov-river": {
       "kind": "cover",
       "size": 300,
-      "own": { "title": "River Flows in You", "composer": "Yiruma", "seed": "river-2" }
+      "own": { "title": "River Flows in You", "composer": "Yiruma", "seed": "river-50" }
     },
     "cov-rach": {
       "kind": "cover",

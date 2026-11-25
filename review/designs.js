@@ -7,6 +7,30 @@ window.DESIGNS = [
   "note": "Built as working pages by Astra, Neon and Claude at the same time. They appear here as they are finished.",
   "options": [
    {
+    "id": "neon-v1",
+    "title": "The calm page",
+    "by": "Neon",
+    "rows": [
+     [
+      {
+       "src": "posted-neon-v1-F.webp",
+       "w": 1440,
+       "h": 4334
+      },
+      {
+       "src": "posted-neon-v1-FP.webp",
+       "w": 390,
+       "h": 5810
+      }
+     ]
+    ],
+    "idea": "Answers what, price and how to start in the first screen, then covers, practising at home with Fallboard, prices and booking. Neon's own choice of concept.",
+    "date": "25 November",
+    "version": "version 1",
+    "live": "v/neon-v1/",
+    "thumb": "t-posted-neon-v1-F.webp"
+   },
+   {
     "id": "leicht-astra-v1",
     "title": "One piece, two versions",
     "by": "Astra",
