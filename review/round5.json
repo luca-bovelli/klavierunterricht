@@ -1,5 +1,62 @@
 [
  {
+  "id": "leicht-astra-v1",
+  "title": "One piece, two versions",
+  "by": "Astra",
+  "rows": [
+   [
+    "posted/leicht-astra-v1-D",
+    "posted/leicht-astra-v1-P"
+   ],
+   [
+    "posted/leicht-astra-v1-F",
+    "posted/leicht-astra-v1-FP"
+   ]
+  ],
+  "idea": "Mozart's tune and his first variation side by side. Both play in the live page.",
+  "date": "25 November",
+  "version": "version 1",
+  "live": "v/leicht-astra-v1/"
+ },
+ {
+  "id": "leicht-claude-v1",
+  "title": "Easy and hard, full bleed",
+  "by": "Claude",
+  "rows": [
+   [
+    "posted/leicht-claude-v1-D",
+    "posted/leicht-claude-v1-P"
+   ],
+   [
+    "posted/leicht-claude-v1-F",
+    "posted/leicht-claude-v1-FP"
+   ]
+  ],
+  "idea": "The split screen from round 3 as a real page. Each half has its own left edge; same piece as Astra's, a harder variation.",
+  "date": "25 November",
+  "version": "version 1",
+  "live": "v/leicht-claude-v1/"
+ },
+ {
+  "id": "stueck-astra-v1",
+  "title": "Name a piece",
+  "by": "Astra",
+  "rows": [
+   [
+    "posted/stueck-astra-v1-D",
+    "posted/stueck-astra-v1-P"
+   ],
+   [
+    "posted/stueck-astra-v1-F",
+    "posted/stueck-astra-v1-FP"
+   ]
+  ],
+  "idea": "Tap a cover or type a title; the choice goes into the trial request. Works in the live page.",
+  "date": "25 November",
+  "version": "version 1",
+  "live": "v/stueck-astra-v1/"
+ },
+ {
   "id": "teil-claude-v1",
   "title": "My part, your part",
   "by": "Claude",

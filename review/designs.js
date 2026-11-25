@@ -7,6 +7,111 @@ window.DESIGNS = [
   "note": "Built as working pages by Astra, Neon and Claude at the same time. They appear here as they are finished.",
   "options": [
    {
+    "id": "leicht-astra-v1",
+    "title": "One piece, two versions",
+    "by": "Astra",
+    "rows": [
+     [
+      {
+       "src": "posted-leicht-astra-v1-D.webp",
+       "w": 1440,
+       "h": 900
+      },
+      {
+       "src": "posted-leicht-astra-v1-P.webp",
+       "w": 390,
+       "h": 844
+      }
+     ],
+     [
+      {
+       "src": "posted-leicht-astra-v1-F.webp",
+       "w": 390,
+       "h": 665
+      },
+      {
+       "src": "posted-leicht-astra-v1-FP.webp",
+       "w": 390,
+       "h": 2698
+      }
+     ]
+    ],
+    "idea": "Mozart's tune and his first variation side by side. Both play in the live page.",
+    "date": "25 November",
+    "version": "version 1",
+    "live": "v/leicht-astra-v1/"
+   },
+   {
+    "id": "leicht-claude-v1",
+    "title": "Easy and hard, full bleed",
+    "by": "Claude",
+    "rows": [
+     [
+      {
+       "src": "posted-leicht-claude-v1-D.webp",
+       "w": 1440,
+       "h": 900
+      },
+      {
+       "src": "posted-leicht-claude-v1-P.webp",
+       "w": 390,
+       "h": 844
+      }
+     ],
+     [
+      {
+       "src": "posted-leicht-claude-v1-F.webp",
+       "w": 390,
+       "h": 1055
+      },
+      {
+       "src": "posted-leicht-claude-v1-FP.webp",
+       "w": 390,
+       "h": 4038
+      }
+     ]
+    ],
+    "idea": "The split screen from round 3 as a real page. Each half has its own left edge; same piece as Astra's, a harder variation.",
+    "date": "25 November",
+    "version": "version 1",
+    "live": "v/leicht-claude-v1/"
+   },
+   {
+    "id": "stueck-astra-v1",
+    "title": "Name a piece",
+    "by": "Astra",
+    "rows": [
+     [
+      {
+       "src": "posted-stueck-astra-v1-D.webp",
+       "w": 1440,
+       "h": 900
+      },
+      {
+       "src": "posted-stueck-astra-v1-P.webp",
+       "w": 390,
+       "h": 844
+      }
+     ],
+     [
+      {
+       "src": "posted-stueck-astra-v1-F.webp",
+       "w": 390,
+       "h": 659
+      },
+      {
+       "src": "posted-stueck-astra-v1-FP.webp",
+       "w": 390,
+       "h": 2527
+      }
+     ]
+    ],
+    "idea": "Tap a cover or type a title; the choice goes into the trial request. Works in the live page.",
+    "date": "25 November",
+    "version": "version 1",
+    "live": "v/stueck-astra-v1/"
+   },
+   {
     "id": "teil-claude-v1",
     "title": "My part, your part",
     "by": "Claude",

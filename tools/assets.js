@@ -28,7 +28,7 @@
            only            "R" | "L"      one hand
            melody          true: hand 0 = the top voice, hand 1 = everything else;   all: 0 or 1, every note that hand
            split           midi: hand 0 = that note and above
-           lead            seconds of empty air under the first note
+           lead            seconds of empty air under the first note;   until: leave out what begins after this second
            notes           [[midi, start, end, hand] …] instead of a file
    hand 0 = right (the light colour), hand 1 = left (the deep one). */
 const http = require('http'), fs = require('fs'), path = require('path');
@@ -94,6 +94,7 @@ function inPage() {
     if (m.all !== undefined) ns.forEach((n) => { n.hand = m.all; });
     if (m.split) for (const n of ns) n.hand = n.midi >= m.split ? 0 : 1;
     if (m.transpose) for (const n of ns) n.midi += m.transpose;
+    if (m.until) ns = ns.filter((n) => n.t0 < m.until);
     return ns;
   }
   A.notes = notesOf;
@@ -114,8 +115,6 @@ function inPage() {
     tmp.style.cssText = `position:fixed;left:-99999px;top:0;width:${Math.round(s.w * k)}px;height:${Math.round(s.h * k)}px`;
     document.body.append(tmp);
     FB.rollGL.thumb(tmp, { roll: rollOf(await notesOf(m), m ? m.from || 0 : 0, m ? m.dur || 8 : 8, m ? m.lead || 0 : 0), hands: p.hands, cover: { base: p.base, fields: p.fields }, span: s.span || (m ? undefined : [0, 52]), glass: false, dpr: (s.w * dpr) / Math.round(s.w * k) });
-    /* the card renderer leaves a hairline 40 of its px above the foot: cover it with what is above */
-    { const t = tmp.getContext('2d'), y = Math.round(tmp.height - 40 * ((s.w * dpr) / Math.round(s.w * k))), q = 4; t.setTransform(1, 0, 0, 1, 0, 0); t.drawImage(tmp, 0, y - 3 * q, tmp.width, q, 0, y - q, tmp.width, 2 * q); }
     const c = document.createElement('canvas'); c.width = Math.round(s.w * dpr); c.height = Math.round(s.h * dpr);
     const f = s.fade, src = f ? Backdrop.fade(tmp, f.cx ?? 0.5, f.cy ?? 1.12, f.rx ?? 1.24, f.ry ?? 1.06, f.a ?? 0.65, f.b ?? 0.45, (f.blur ?? 10) * dpr) : tmp;
     c.getContext('2d').drawImage(src, 0, 0, c.width, c.height);

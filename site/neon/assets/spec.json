@@ -1,0 +1,84 @@
+{
+  "out": ".",
+  "dpr": 1.5,
+  "assets": {
+    "hero-D": {
+      "kind": "light",
+      "w": 1440,
+      "h": 1020,
+      "palette": "orchid",
+      "music": { "file": "library/scores/debussy/l-66/1.mxl", "from": 18, "dur": 11, "melody": true },
+      "span": [4, 48],
+      "scale": 0.48,
+      "fade": { "cx": 0.5, "cy": 1.04, "rx": 1.18, "ry": 0.64, "a": 0.65, "b": 0.45, "blur": 10 }
+    },
+    "hero-P": {
+      "kind": "light",
+      "w": 420,
+      "h": 920,
+      "palette": "orchid",
+      "music": { "file": "library/scores/debussy/l-66/1.mxl", "from": 18, "dur": 11, "melody": true },
+      "span": [10, 44],
+      "scale": 0.48,
+      "fade": { "cx": 0.5, "cy": 1.04, "rx": 1.35, "ry": 0.52, "a": 0.65, "b": 0.45, "blur": 9 }
+    },
+    "practice-D": {
+      "kind": "light",
+      "w": 1440,
+      "h": 760,
+      "palette": "lagoon",
+      "music": { "file": "library/scores/chopin/op-10/1.mxl", "from": 0, "dur": 7 },
+      "span": [-22, 48],
+      "scale": 0.62
+    },
+    "practice-P": {
+      "kind": "light",
+      "w": 420,
+      "h": 540,
+      "palette": "lagoon",
+      "music": { "file": "library/scores/chopin/op-10/1.mxl", "from": 0, "dur": 7 },
+      "span": [8, 46],
+      "scale": 0.55
+    },
+    "close-D": {
+      "kind": "light",
+      "w": 1440,
+      "h": 680,
+      "palette": "orchid",
+      "music": { "file": "library/scores/debussy/l-75/3.mxl", "from": 78, "dur": 12, "melody": true },
+      "span": [-16, 48],
+      "scale": 0.46,
+      "fade": { "cx": 0.76, "cy": 1.08, "rx": 1.08, "ry": 0.84, "a": 0.65, "b": 0.45, "blur": 10 }
+    },
+    "cov-interstellar": {
+      "kind": "cover",
+      "size": 300,
+      "own": { "title": "Interstellar", "composer": "Hans Zimmer", "seed": "interstellar-1" }
+    },
+    "cov-elise": {
+      "kind": "cover",
+      "size": 300,
+      "id": "beethoven/woo-59"
+    },
+    "cov-viva": {
+      "kind": "cover",
+      "size": 300,
+      "own": { "title": "Viva la Vida", "composer": "Coldplay", "seed": "viva-3" }
+    },
+    "cov-clair": {
+      "kind": "cover",
+      "size": 300,
+      "id": "debussy/l-75/3"
+    },
+    "cov-river": {
+      "kind": "cover",
+      "size": 300,
+      "own": { "title": "River Flows in You", "composer": "Yiruma", "seed": "river-2" }
+    },
+    "cov-rach": {
+      "kind": "cover",
+      "size": 300,
+      "id": "rachmaninoff/op-3/2"
+    }
+  }
+}

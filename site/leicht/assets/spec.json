@@ -1,0 +1,7 @@
+{"out":".","dpr":2,"assets":{
+"easy":{"kind":"light","w":720,"h":900,"palette":"lagoon","music":{"file":"library/scores/mozart/k-265.mxl","from":0,"dur":11.4,"until":6.4},"span":[7,38],"scale":0.85},
+"hard":{"kind":"light","w":720,"h":900,"palette":"dusk","music":{"file":"library/scores/mozart/k-265.mxl","from":130,"dur":8.4},"span":[0,39.5],"scale":0.85},
+"easy-p":{"kind":"light","w":390,"h":560,"palette":"lagoon","music":{"file":"library/scores/mozart/k-265.mxl","from":0,"dur":9.5,"until":2.6},"span":[8,37],"scale":0.8},
+"hard-p":{"kind":"light","w":390,"h":360,"palette":"dusk","music":{"file":"library/scores/mozart/k-265.mxl","from":130,"dur":4.6},"span":[6,39.5],"scale":0.8},
+"cover":{"kind":"cover","size":560,"id":"mozart/k-265"},
+"dome":{"kind":"light","w":1440,"h":900,"palette":"dusk","music":{"file":"library/scores/mozart/k-265.mxl","from":130,"dur":8},"span":[-34,80],"scale":0.48,"fade":{}}}}
