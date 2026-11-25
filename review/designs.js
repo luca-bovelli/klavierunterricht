@@ -5,7 +5,67 @@ window.DESIGNS = [
   "short": "Live pages",
   "title": "Round 5: real pages",
   "note": "Built as working pages by Astra, Neon and Claude at the same time. They appear here as they are finished.",
-  "options": []
+  "options": [
+   {
+    "id": "teil-claude-v1",
+    "title": "My part, your part",
+    "by": "Claude",
+    "rows": [
+     [
+      {
+       "src": "posted-teil-claude-v1-D.webp",
+       "w": 1440,
+       "h": 900
+      },
+      {
+       "src": "posted-teil-claude-v1-P.webp",
+       "w": 390,
+       "h": 844
+      }
+     ],
+     [
+      {
+       "src": "posted-teil-claude-v1-D2.webp",
+       "w": 1440,
+       "h": 900
+      },
+      {
+       "src": "posted-teil-claude-v1-P2.webp",
+       "w": 390,
+       "h": 844
+      }
+     ],
+     [
+      {
+       "src": "posted-teil-claude-v1-D3.webp",
+       "w": 1440,
+       "h": 900
+      },
+      {
+       "src": "posted-teil-claude-v1-P3.webp",
+       "w": 390,
+       "h": 844
+      }
+     ],
+     [
+      {
+       "src": "posted-teil-claude-v1-DL.webp",
+       "w": 390,
+       "h": 811
+      },
+      {
+       "src": "posted-teil-claude-v1-PL.webp",
+       "w": 390,
+       "h": 3194
+      }
+     ]
+    ],
+    "idea": "Your notes are pink, the teacher's are blue. As you scroll, more and more of the same music turns pink until you play all of it. The tune is a placeholder.",
+    "date": "25 November",
+    "version": "version 1",
+    "live": "v/teil-claude-v1/"
+   }
+  ]
  },
  {
   "id": "round4",

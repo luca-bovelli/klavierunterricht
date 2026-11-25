@@ -1,0 +1,29 @@
+[
+ {
+  "id": "teil-claude-v1",
+  "title": "My part, your part",
+  "by": "Claude",
+  "rows": [
+   [
+    "posted/teil-claude-v1-D",
+    "posted/teil-claude-v1-P"
+   ],
+   [
+    "posted/teil-claude-v1-D2",
+    "posted/teil-claude-v1-P2"
+   ],
+   [
+    "posted/teil-claude-v1-D3",
+    "posted/teil-claude-v1-P3"
+   ],
+   [
+    "posted/teil-claude-v1-DL",
+    "posted/teil-claude-v1-PL"
+   ]
+  ],
+  "idea": "Your notes are pink, the teacher's are blue. As you scroll, more and more of the same music turns pink until you play all of it. The tune is a placeholder.",
+  "date": "25 November",
+  "version": "version 1",
+  "live": "v/teil-claude-v1/"
+ }
+]
