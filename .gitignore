@@ -5,3 +5,4 @@ stills/
 frames/
 tools/try*.json
 tools/*.tmp*
+.feedback-*
