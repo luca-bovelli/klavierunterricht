@@ -1,0 +1,7 @@
+# working notes and drafts stay on this machine: the repo is public
+*.md
+!README.md
+stills/
+frames/
+tools/try*.json
+tools/*.tmp*
