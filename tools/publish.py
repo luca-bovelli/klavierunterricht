@@ -51,8 +51,9 @@ def image(name):
     src = name if os.path.isabs(name) else os.path.join(ST, name + '.png')
     out = name.replace('/', '-').replace('\\', '-') + '.webp'
     im = Image.open(src)
-    phone = im.width / im.height < 0.8
-    css = (390, round(390 * im.height / im.width)) if phone and 'unten' not in name else (1440, round(1440 * im.height / im.width))
+    kind = name.rsplit('-', 1)[-1]
+    phone = im.width / im.height < 0.8 and kind not in ('F', 'L', 'D', 'DL', 'D2', 'D3', 'W', 'T')
+    css = (390, round(390 * im.height / im.width)) if phone else (1440, round(1440 * im.height / im.width))
     dst = os.path.join(OUT, out)
     if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
         w = min(im.width, 780 if css[0] == 390 else 1800)

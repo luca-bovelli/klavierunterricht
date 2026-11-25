@@ -13,21 +13,9 @@ window.DESIGNS = [
     "rows": [
      [
       {
-       "src": "posted-leicht-astra-v1-D.webp",
-       "w": 1440,
-       "h": 900
-      },
-      {
-       "src": "posted-leicht-astra-v1-P.webp",
-       "w": 390,
-       "h": 844
-      }
-     ],
-     [
-      {
        "src": "posted-leicht-astra-v1-F.webp",
-       "w": 390,
-       "h": 665
+       "w": 1440,
+       "h": 2456
       },
       {
        "src": "posted-leicht-astra-v1-FP.webp",
@@ -48,21 +36,9 @@ window.DESIGNS = [
     "rows": [
      [
       {
-       "src": "posted-leicht-claude-v1-D.webp",
-       "w": 1440,
-       "h": 900
-      },
-      {
-       "src": "posted-leicht-claude-v1-P.webp",
-       "w": 390,
-       "h": 844
-      }
-     ],
-     [
-      {
        "src": "posted-leicht-claude-v1-F.webp",
-       "w": 390,
-       "h": 1055
+       "w": 1440,
+       "h": 3894
       },
       {
        "src": "posted-leicht-claude-v1-FP.webp",
@@ -83,21 +59,9 @@ window.DESIGNS = [
     "rows": [
      [
       {
-       "src": "posted-stueck-astra-v1-D.webp",
-       "w": 1440,
-       "h": 900
-      },
-      {
-       "src": "posted-stueck-astra-v1-P.webp",
-       "w": 390,
-       "h": 844
-      }
-     ],
-     [
-      {
        "src": "posted-stueck-astra-v1-F.webp",
-       "w": 390,
-       "h": 659
+       "w": 1440,
+       "h": 2435
       },
       {
        "src": "posted-stueck-astra-v1-FP.webp",
@@ -155,8 +119,8 @@ window.DESIGNS = [
      [
       {
        "src": "posted-teil-claude-v1-DL.webp",
-       "w": 390,
-       "h": 811
+       "w": 1440,
+       "h": 2994
       },
       {
        "src": "posted-teil-claude-v1-PL.webp",

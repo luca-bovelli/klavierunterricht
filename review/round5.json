@@ -5,10 +5,6 @@
   "by": "Astra",
   "rows": [
    [
-    "posted/leicht-astra-v1-D",
-    "posted/leicht-astra-v1-P"
-   ],
-   [
     "posted/leicht-astra-v1-F",
     "posted/leicht-astra-v1-FP"
    ]
@@ -24,10 +20,6 @@
   "by": "Claude",
   "rows": [
    [
-    "posted/leicht-claude-v1-D",
-    "posted/leicht-claude-v1-P"
-   ],
-   [
     "posted/leicht-claude-v1-F",
     "posted/leicht-claude-v1-FP"
    ]
@@ -42,10 +34,6 @@
   "title": "Name a piece",
   "by": "Astra",
   "rows": [
-   [
-    "posted/stueck-astra-v1-D",
-    "posted/stueck-astra-v1-P"
-   ],
    [
     "posted/stueck-astra-v1-F",
     "posted/stueck-astra-v1-FP"
