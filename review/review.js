@@ -57,7 +57,7 @@
     const paint = () => { const v = val(id)[key] || 0; labels.forEach((l, i) => { l.classList.toggle('on', i < v); l.firstChild.checked = i + 1 === v; }); };
     for (let i = 1; i <= 5; i++) {
       const l = el('label'), input = el('input');
-      input.type = 'radio'; input.name = key; input.value = i; input.setAttribute('aria-label', `${name}: ${i} of 5`);
+      input.type = 'radio'; input.name = id + key; input.value = i; input.setAttribute('aria-label', `${name}: ${i} of 5`);
       input.addEventListener('click', () => { const v = val(id); state.now[id] = { ...v, [key]: v[key] === i ? 0 : i }; save(); paint(); change(); });
       l.append(input); l.insertAdjacentHTML('beforeend', STAR);
       l.addEventListener('pointerenter', () => labels.forEach((x, j) => x.classList.toggle('hover', j < i)));
@@ -66,39 +66,40 @@
     paint();
     return f;
   }
-  const word = (id) => (done(id) ? 'Sent' : open(id) ? 'Not sent' : '');
-  function card(o) {
-    const a = el('a', 'card'), pic = el('div', 'pic'), img = el('img'), cap = el('div', 'cap');
-    a.href = '#' + o.id;
-    img.src = 'review/img/' + o.rows[0][0].src; img.alt = ''; img.loading = 'lazy';
-    pic.append(img); cap.append(el('h2', '', o.title), el('span', 'state', word(o.id)));
-    a.append(pic, cap, el('p', 'by', o.by));
-    return a;
+  /* both ratings, the text and the button, the same on a card and beside a design */
+  function review(o, changed) {
+    const rate = el('div', 'rate'), say = el('textarea', 'say'), b = el('button', 'main');
+    b.type = 'button'; say.rows = 1;
+    const refresh = () => { b.disabled = !open(o.id); b.textContent = done(o.id) ? 'Sent' : 'Send'; if (changed) changed(); };
+    rate.append(stars(o.id, 'n', 'Now', refresh), stars(o.id, 'p', 'Potential', refresh));
+    say.placeholder = 'Feedback'; say.setAttribute('aria-label', 'Feedback on ' + o.title); say.value = val(o.id).t || '';
+    const grow = () => { say.style.height = 'auto'; say.style.height = say.scrollHeight + 'px'; };
+    say.addEventListener('input', () => { state.now[o.id] = { ...val(o.id), t: say.value }; save(); grow(); refresh(); });
+    b.addEventListener('click', async () => {
+      b.disabled = true; b.textContent = 'Sending';
+      try { await send([o.id]); refresh(); } catch (e) { b.disabled = false; b.textContent = 'Try again'; }
+    });
+    refresh();
+    return { parts: [rate, say, b], grow, refresh };
   }
 
   /* ---- all designs */
-  let homeY = 0, earlierOpen = false;
+  let homeY = 0;
   function home() {
     document.title = 'Designs';
-    const h = el('div', 'home fade'), grid = el('div', 'grid');
-    h.append(el('h1', '', 'Designs'));
-    ROUNDS[0].options.forEach((o) => grid.append(card(o)));
-    h.append(grid);
-    const rest = ROUNDS.slice(1);
-    if (rest.length) {
-      const d = el('details', 'earlier'); d.open = earlierOpen;
-      d.append(el('summary', '', 'Earlier designs'));
-      for (const r of rest) { const g = el('div', 'grid'); r.options.forEach((o) => g.append(card(o))); d.append(el('h3', '', r.title), g); }
-      d.addEventListener('toggle', () => { earlierOpen = d.open; });
-      h.append(d);
+    const h = el('div', 'home fade'), grid = el('div', 'grid'), tray = el('div', 'tray'), text = el('span'), all = el('button', 'main', 'Send all'), cards = [];
+    const count = () => { const n = pending().length; tray.hidden = n < 2; text.textContent = `${n} not sent`; };
+    for (const o of ALL) {
+      const c = el('article', 'card'), pic = el('a', 'pic'), img = el('img'), body = el('div', 'body'), r = review(o, count);
+      pic.href = '#' + o.id; pic.setAttribute('aria-label', `${o.title} by ${o.by}, open`);
+      img.src = 'review/img/' + (o.thumb || o.rows[0][0].src); img.alt = ''; img.loading = 'lazy';
+      pic.append(img); body.append(...r.parts); c.append(pic, body); grid.append(c); cards.push(r);
     }
-    const tray = el('div', 'tray'), n = pending();
-    tray.hidden = n.length < 1;
-    const text = el('span', '', `${n.length} not sent`), b = el('button', 'main', n.length > 1 ? 'Send all' : 'Send');
-    b.type = 'button';
-    b.addEventListener('click', async () => { b.disabled = true; b.textContent = 'Sending'; try { await send(pending()); home(); } catch (e) { text.textContent = 'Could not send'; b.disabled = false; b.textContent = 'Try again'; } });
-    tray.append(text, b); h.append(tray);
+    all.type = 'button';
+    all.addEventListener('click', async () => { all.disabled = true; all.textContent = 'Sending'; try { await send(pending()); all.textContent = 'Send all'; cards.forEach((r) => r.refresh()); } catch (e) { all.textContent = 'Try again'; } all.disabled = false; });
+    tray.append(text, all); h.append(el('h1', '', 'Designs'), grid, tray);
     app.replaceChildren(h);
+    cards.forEach((r) => r.grow()); count();
     scrollTo(0, homeY);
   }
 
@@ -132,31 +133,14 @@
     p.append(el('h1', '', o.title), el('p', 'by', [o.by, o.version].filter(Boolean).join(', ')));
     if (o.idea) p.append(el('p', 'idea', o.idea));
 
-    const rate = el('div', 'rate'), say = el('textarea', 'say'), main = el('button', 'main'), status = el('p', 'status');
-    main.type = 'button'; status.setAttribute('aria-live', 'polite');
-    const next = () => ALL.find((x, j) => j > i && !any(val(x.id))) || ALL.find((x) => x !== o && !any(val(x.id)));
-    const refresh = () => {
-      const sent = done(o.id);
-      main.disabled = !any(val(o.id)) || (sent && !next());
-      main.textContent = sent && next() ? 'Next design' : 'Send';
-      status.textContent = sent ? 'Sent' : '';
-    };
-    rate.append(stars(o.id, 'n', 'Now', refresh), stars(o.id, 'p', 'Potential', refresh));
-    say.placeholder = 'Feedback (optional)'; say.setAttribute('aria-label', 'Feedback'); say.value = val(o.id).t || '';
-    const grow = () => { say.style.height = 'auto'; say.style.height = Math.max(96, say.scrollHeight) + 'px'; };
-    say.addEventListener('input', () => { state.now[o.id] = { ...val(o.id), t: say.value }; save(); grow(); refresh(); });
-    main.addEventListener('click', async () => {
-      if (done(o.id)) { location.hash = next().id; return; }
-      main.disabled = true; main.textContent = 'Sending';
-      try { await send([o.id]); refresh(); if (!state.key) status.textContent = 'Press Create on GitHub to finish'; } catch (e) { main.disabled = false; main.textContent = 'Try again'; status.textContent = 'Could not send. Your rating is kept.'; }
-    });
-    p.append(rate, say, main, status);
+    const r = review(o);
+    p.append(...r.parts);
 
     const body = el('div', 'one'); body.append(pics, p);
     root.append(bar, body);
-    show(); refresh();
+    show();
     app.replaceChildren(root);
-    grow(); scrollTo(0, 0);
+    r.grow(); scrollTo(0, 0);
   }
 
   let last = null;
@@ -167,7 +151,7 @@
     if (o) one(o); else home();
   }
   addEventListener('hashchange', route);
-  document.addEventListener('click', (e) => { if (e.target.closest('.card')) homeY = scrollY; }, true);
+  document.addEventListener('click', (e) => { if (e.target.closest('.pic')) homeY = scrollY; }, true);
   addEventListener('keydown', (e) => {
     if (e.target.closest('textarea, input') || e.metaKey || e.ctrlKey || e.altKey) return;
     const i = ALL.findIndex((x) => x.id === last); if (i < 0) return;

@@ -27,7 +27,8 @@ window.DESIGNS = [
     "idea": "Mozart's tune and his first variation side by side. Both play in the live page.",
     "date": "25 November",
     "version": "version 1",
-    "live": "v/leicht-astra-v1/"
+    "live": "v/leicht-astra-v1/",
+    "thumb": "t-posted-leicht-astra-v1-F.webp"
    },
    {
     "id": "leicht-claude-v1",
@@ -50,7 +51,8 @@ window.DESIGNS = [
     "idea": "The split screen from round 3 as a real page. Each half has its own left edge; same piece as Astra's, a harder variation.",
     "date": "25 November",
     "version": "version 1",
-    "live": "v/leicht-claude-v1/"
+    "live": "v/leicht-claude-v1/",
+    "thumb": "t-posted-leicht-claude-v1-F.webp"
    },
    {
     "id": "stueck-astra-v1",
@@ -73,7 +75,8 @@ window.DESIGNS = [
     "idea": "Tap a cover or type a title; the choice goes into the trial request. Works in the live page.",
     "date": "25 November",
     "version": "version 1",
-    "live": "v/stueck-astra-v1/"
+    "live": "v/stueck-astra-v1/",
+    "thumb": "t-posted-stueck-astra-v1-F.webp"
    },
    {
     "id": "teil-claude-v1",
@@ -132,7 +135,8 @@ window.DESIGNS = [
     "idea": "Your notes are pink, the teacher's are blue. As you scroll, more and more of the same music turns pink until you play all of it. The tune is a placeholder.",
     "date": "25 November",
     "version": "version 1",
-    "live": "v/teil-claude-v1/"
+    "live": "v/teil-claude-v1/",
+    "thumb": "t-posted-teil-claude-v1-D.webp"
    }
   ]
  },
@@ -163,7 +167,8 @@ window.DESIGNS = [
     "idea": "You name a piece, Luca brings a version you can play in the free trial.",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-pages-stueck-D.webp"
    },
    {
     "id": "teil-r4",
@@ -193,7 +198,8 @@ window.DESIGNS = [
     "idea": "You play together from the first lesson, and your share grows.",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-pages-teil-D.webp"
    },
    {
     "id": "leicht-r4",
@@ -216,7 +222,8 @@ window.DESIGNS = [
     "idea": "One piece, a simple and a full version.",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-pages-leicht-D.webp"
    },
    {
     "id": "zuhause-r4",
@@ -239,7 +246,8 @@ window.DESIGNS = [
     "idea": "A lesson a week, and Fallboard in between.",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-pages-zuhause-D.webp"
    },
    {
     "id": "woche-r4",
@@ -262,7 +270,8 @@ window.DESIGNS = [
     "idea": "Seven days with one piece. Dropped: it felt like homework.",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-pages-woche-D.webp"
    },
    {
     "id": "unten-r4",
@@ -280,7 +289,8 @@ window.DESIGNS = [
     "idea": "What comes out of it, who teaches, prices, booking.",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-pages-unten-L.webp"
    }
   ]
  },
@@ -311,7 +321,8 @@ window.DESIGNS = [
     "idea": "Easy and hard side by side, full bleed.",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-market-split-1.webp"
    },
    {
     "id": "opta-r3",
@@ -334,7 +345,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-market-optA-1.webp"
    },
    {
     "id": "optb-r3",
@@ -357,7 +369,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-market-optB-1.webp"
    },
    {
     "id": "optc-r3",
@@ -380,7 +393,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-market-optC-1.webp"
    },
    {
     "id": "optf-r3",
@@ -403,7 +417,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-market-optF-1.webp"
    },
    {
     "id": "ask-r3",
@@ -433,7 +448,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-market-ask-1.webp"
    },
    {
     "id": "goal-r3",
@@ -463,7 +479,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-market-goal-1.webp"
    },
    {
     "id": "piece-r3",
@@ -493,7 +510,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-market-piece-1.webp"
    },
    {
     "id": "place-r3",
@@ -523,7 +541,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-market-place-1.webp"
    },
    {
     "id": "time-r3",
@@ -553,7 +572,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-market-time-1.webp"
    }
   ]
  },
@@ -596,7 +616,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-frames-ask-D.webp"
    },
    {
     "id": "goal-r2",
@@ -631,7 +652,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-frames-goal-D.webp"
    },
    {
     "id": "piece-r2",
@@ -666,7 +688,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-frames-piece-D.webp"
    },
    {
     "id": "place-r2",
@@ -701,7 +724,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-frames-place-D.webp"
    },
    {
     "id": "time-r2",
@@ -736,7 +760,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-frames-time-D.webp"
    }
   ]
  },
@@ -767,7 +792,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-v1-hero-orchid.webp"
    },
    {
     "id": "hero-lagoon-r1",
@@ -785,7 +811,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-v1-hero-lagoon.webp"
    },
    {
     "id": "name-r1",
@@ -820,7 +847,8 @@ window.DESIGNS = [
     "idea": "",
     "date": "24 November",
     "version": "",
-    "live": ""
+    "live": "",
+    "thumb": "t-v1-name-4.webp"
    }
   ]
  }

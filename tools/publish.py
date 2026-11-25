@@ -60,8 +60,17 @@ def image(name):
         im.convert('RGB').resize((w, round(im.height * w / im.width)), Image.LANCZOS).save(dst, 'WEBP', quality=86, method=6)
     return dict(src=out, w=css[0], h=css[1])
 
+def thumb(name):
+    """the card's photo: the top of the first picture, 16:10"""
+    src = os.path.join(ST, name + '.png'); out = 't-' + name.replace('/', '-') + '.webp'; dst = os.path.join(OUT, out)
+    if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
+        im = Image.open(src).convert('RGB'); im = im.crop((0, 0, im.width, min(im.height, round(im.width * 10 / 16))))
+        im.resize((760, round(760 * im.height / im.width)), Image.LANCZOS).save(dst, 'WEBP', quality=84, method=6)
+    return out
+
 for r in ROUNDS:
     for o in r['options']:
+        o['thumb'] = thumb(o['rows'][0][0])
         o['rows'] = [[image(n) for n in row] for row in o['rows']]
 with open(os.path.join(ROOT, 'review', 'designs.js'), 'w', encoding='utf-8') as f:
     f.write('/* made by tools/publish.py */\nwindow.DESIGNS = ' + json.dumps(ROUNDS, ensure_ascii=False, indent=1) + ';\n')
